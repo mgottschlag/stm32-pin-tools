@@ -208,7 +208,7 @@ impl Mcu {
 lazy_static! {
     static ref MCUS: BTreeMap<String, &'static str> = {
         let mut mcus = BTreeMap::new();
-        /*mcus.insert(
+        mcus.insert(
             "STM32F030C6Tx".to_owned(),
             include_str!("../cube-MX-db/mcu/STM32F030C6Tx.xml"),
         );
@@ -1371,12 +1371,12 @@ lazy_static! {
         mcus.insert(
             "STM32F429ZGYx".to_owned(),
             include_str!("../cube-MX-db/mcu/STM32F429ZGYx.xml"),
-        );*/
+        );
         mcus.insert(
             "STM32F429ZITx".to_owned(),
             include_str!("../cube-MX-db/mcu/STM32F429ZITx.xml"),
         );
-        /*mcus.insert(
+        mcus.insert(
             "STM32F429ZIYx".to_owned(),
             include_str!("../cube-MX-db/mcu/STM32F429ZIYx.xml"),
         );
@@ -3355,7 +3355,7 @@ lazy_static! {
         mcus.insert(
             "STM32L4S9ZIYx".to_owned(),
             include_str!("../cube-MX-db/mcu/STM32L4S9ZIYx.xml"),
-        );*/
+        );
         mcus
     };
 }
