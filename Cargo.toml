@@ -1,0 +1,10 @@
+[package]
+name = "stm32-pin-diagram"
+version = "0.1.0"
+authors = ["Mathias Gottschlag <mathias.gottschlag@kit.edu>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.4"
+quick-xml = "0.20"
+structopt = "0.3"
