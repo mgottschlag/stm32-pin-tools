@@ -277,6 +277,9 @@ impl Package {
         if s.starts_with("LQFP") {
             let pins = s[4..].parse().ok()?;
             Some(Package::Qfp(pins))
+        } else if s.starts_with("UFQFPN") {
+            let pins = s[6..].parse().ok()?;
+            Some(Package::Qfp(pins))
         } else {
             None
         }
