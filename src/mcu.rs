@@ -6,6 +6,7 @@ use quick_xml::events::Event;
 use quick_xml::Reader;
 
 pub struct Pin {
+    // Name of the pin (e.g., VDD or PA0).
     pub name: String,
     pub position: String,
     pub type_: String,
@@ -76,6 +77,10 @@ impl Mcu {
             }
         }
         Some(mcu.expect("No Mcu tag found."))
+    }
+
+    pub fn all_models() -> Vec<String> {
+        MCUS.keys().cloned().collect()
     }
 
     fn load_mcu(reader: &mut Reader<&[u8]>, mcu: &mut Mcu, buf: &mut Vec<u8>) {

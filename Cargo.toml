@@ -1,5 +1,5 @@
 [package]
-name = "stm32-pin-diagram"
+name = "stm32-pin-tools"
 version = "0.1.0"
 authors = ["Mathias Gottschlag <mathias.gottschlag@kit.edu>"]
 edition = "2018"

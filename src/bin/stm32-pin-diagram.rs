@@ -6,10 +6,8 @@ use std::path::PathBuf;
 
 use structopt::StructOpt;
 
-use mcu::Mcu;
-
-mod diagram;
-mod mcu;
+use stm32_pin_tools::diagram;
+use stm32_pin_tools::mcu::Mcu;
 
 #[derive(Debug, StructOpt)]
 #[structopt(
