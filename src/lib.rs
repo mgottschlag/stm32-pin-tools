@@ -1,2 +1,2 @@
-pub mod mcu;
 pub mod diagram;
+pub mod mcu;
